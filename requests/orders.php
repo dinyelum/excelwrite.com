@@ -1,6 +1,6 @@
 <?php
 session_start();
-require "../../app/excelwrite/init.php";
+require "../../app/excelwrite/core/init.php";
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
     // show($_POST);exit;
     $genclass = new General;

@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../../app/excelwrite/init.php';
+include '../../app/excelwrite/core/init.php';
 $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
 $tableclass = new $_GET['section'];
 $columns = explode('_', base64_decode($_GET['datahash']));

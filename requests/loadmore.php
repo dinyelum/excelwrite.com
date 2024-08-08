@@ -1,6 +1,6 @@
 <?php
 session_start();
-include '../../app/excelwrite/init.php';
+include '../../app/excelwrite/core/init.php';
 if(isset($_GET['section']) && isset($_GET['offset']) && isset($_GET['limit'])) {
     $offset = filter_input(INPUT_GET, 'offset', FILTER_VALIDATE_INT);
     $limit = filter_input(INPUT_GET, 'limit', FILTER_VALIDATE_INT);

@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-include_once '/home/betaahfg/app/excelwrite/init.php';
+include_once '../../app/excelwrite/core/init.php';
 if(isset($_GET['id'])) {
     $id = filter_input(INPUT_GET, 'id', FILTER_VALIDATE_INT);
     if(is_int($id)) {
