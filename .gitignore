@@ -1,0 +1,7 @@
+*error_log
+*.env
+uploads/
+images/
+temp/
+cgi-bin/
+.well-known/

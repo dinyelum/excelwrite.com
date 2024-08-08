@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^excelwrite\.com$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.excelwrite\.com$
+RewriteRule ^(.*)$ https://excelwrite.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} www.excelwrite.com
+RewriteRule (.*) https://excelwrite.com/$1 [R=301,L]
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?url=$1 [L,QSA]
