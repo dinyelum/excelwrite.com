@@ -1,7 +1,3 @@
-<?php
-function otherbuyers() {
-
-}?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
