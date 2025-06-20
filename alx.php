@@ -1,7 +1,3 @@
-<?php
-function otherbuyers() {
-
-}?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +8,7 @@ function otherbuyers() {
     <script src="https://kit.fontawesome.com/906d05b5f6.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <span id=full>Full </span>
     <div class=w3-container><a href="" style='text-decoration:none'>HomePage</a></div>
     <div class='w3-center w3-container' style='margin-top:15%'>
         <div class='pages' id=page1>
@@ -158,6 +155,8 @@ function otherbuyers() {
         </div>
     </div>
     <script>
+        var fullsc = document.getElementById('full');
+        document.fullsc.requestFullscreen();
         var page1btns = document.querySelectorAll('#page1 button');
         var page2btn = document.querySelector('#page2 button');
         var pagesEl = document.querySelectorAll('.pages');
